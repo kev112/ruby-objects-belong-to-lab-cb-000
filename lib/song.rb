@@ -1,8 +1,9 @@
 class Song
   attr_acessor :artist, :title
   
-  def method_name
-    
+  def initialize(artist, title)
+    @artist=Artist.new(artist)
+    @title=title    
   end
   
 end
